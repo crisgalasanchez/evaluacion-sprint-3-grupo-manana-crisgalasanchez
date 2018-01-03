@@ -1,0 +1,43 @@
+.title {
+  width: 290px;
+  height: 110px;
+  color: $colorWhite;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  @include Hero-title---mobile;
+}
+.text-hero{
+  width: 290px;
+  height: 21px;
+  color: $colorWhite;
+  @include Hero-summary---mobile;
+}
+h4 {
+  width: 90px;
+  height: 30px;
+  color: $colorLightBlue;
+  @include Section-category;
+}
+h2 {
+  width: 290px;
+  height: 60px;
+  color: $colorBlack;
+  @include Section-title---mobile;
+}
+.text-looking {
+  width: 290px;
+  height: 120px;
+  color: $colorDarkGrey;
+  @include Section-description;
+}
+.pretitle {
+  width: 184px;
+  height: 30px;
+  color: $colorBlack;
+  @include Reason-title---mobile;
+}
+.text-reasons {
+  width: 180px;
+  height: 63px;
+  color: $colorBlack;
+  @include Reason-description---mobile;
+}

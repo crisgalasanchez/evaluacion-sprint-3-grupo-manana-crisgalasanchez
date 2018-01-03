@@ -2,12 +2,15 @@
 // @import 'core/functions';
 // @import 'core/mixins';
 @import 'core/variables';
+@import 'core/mixins';
 
 // Layout
+@import 'layout/header';
 @import 'layout/footer';
 @import 'layout/grid';
 
 // Components
 @import 'components/buttons';
+@import 'components/content';
 @import 'components/hero';
 @import 'components/typography';

@@ -2,5 +2,20 @@
   width: 320px;
   height: 128px;
   background-color: $colorDarkBlue;
-  background-color: $colorDarkBlue;
+}
+.footer-text {
+  width: 77px;
+  height: 30px;
+  color: $colorWhite;
+  @include Footer---mobile;
+}
+.footer-text2 {
+  width: 290px;
+  height: 30px;
+  color: $colorWhite;
+  @include Footer---mobile;
+}
+
+.footer-text2-icon {
+  color: $colorOrange;
 }
