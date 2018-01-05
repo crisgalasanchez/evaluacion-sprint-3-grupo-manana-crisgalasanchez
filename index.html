@@ -22,17 +22,17 @@
 	  		<button class="close" title="Close">X</button>
 	  		<ul class="menu">
 					<li class="menu-option">
-						<a href="" class="menu-link">Anonymous Proxy</a>
+						<a href="#anonymous" class="menu-link">Anonymous Proxy</a>
 					</li>
 					<li class="menu-option">
-						<a href="" class="menu-link">Looking Through a Window</a>
+						<a href="#looking" class="menu-link">Looking Through a Window</a>
 					</li>
 					<li class="menu-option">
-						<a href="" class="menu-link">3 Reasons To Purchase</a>
+						<a href="#reasons" class="menu-link">3 Reasons To Purchase</a>
 					</li>
 			  </ul>
 			</nav>
-			<div class="hero">
+			<div id="anonymous" class="hero">
 				<h1 class="title">ANONYMOUS PROXY</h1>
 				<p class="text-hero">In hac habitasse platea dictumst.</p>
 				<div class="arrow-hero">
@@ -44,7 +44,7 @@
 		</div>
 	<main>
 
-		<div class="looking">
+		<div id="looking" class="looking">
 			<h4>Insomnia Tips</h4>
 			<h2>Looking Through A Window</h2>
 			<p class="text-looking">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
@@ -53,32 +53,37 @@
 			<button class="button1">Go</button>
 		</div>
 
-		<div class="reasons">
+		<div id="reasons" class="reasons">
 			<h2>3 Reasons To Purchase</h2>
-			<div>
-				<h3 class="pretitle">Ut sed metus</h3>
-				<p class="text-reasons">Lorem ipsum dolor sit amet, consecteur.</p>
+			<div class="explain-reasons">
+				<div >
+					<h3 class="pretitle">Ut sed metus</h3>
+					<p class="text-reasons">Lorem ipsum dolor sit amet, consecteur.</p>
+				</div>
+				<div>
+					<h3 class="pretitle">Curabitur ac erat</h3>
+					<p class="text-reasons">Mauris mattis urna quis lorem molestie.</p>
+				</div>
+				<div>
+					<h3 class="pretitle">Morbi dictum</h3>
+					<p class="text-reasons">Aliquam in dolor et dolor tincidunt.</p>
+				</div>
 			</div>
-			<div>
-				<h3 class="pretitle">Curabitur ac erat</h3>
-				<p class="text-reasons">Mauris mattis urna quis lorem molestie.</p>
-			</div>
-			<div>
-				<h3 class="pretitle">Morbi dictum</h3>
-				<p class="text-reasons">Aliquam in dolor et dolor tincidunt.</p>
-			</div>
+
 			<button class="button2">More reasons</button>
 		</div>
   </main>
 
 	<footer>
 		<div class="arrow-footer">
-		 <a href="#">
-			<img src="images/ico-arrow.svg" class="arrow-up">
+		 <a id="arriba" title="Arriba">
+			<img src="images/ico-arrow.svg" class="arrow-up" title="Arriba" alt="Arriba">
 		 </a>
  		</div>
-		<p class="footer-text">©2017</p>
-		<p class="footer-text2">we <span class="footer-text2-icon">❤︎</span> components</p>
+		<div class="infooter">
+			<p class="footer-text">©2017</p>
+			<p class="footer-text2">we <span class="footer-text2-icon">❤︎</span> components</p>
+		</div>
 	</footer>
 
 	<script type="text/javascript" src="js/main.min.js"></script>

@@ -4,13 +4,27 @@
     border-radius: 22.5px;
     border: solid 2px $colorOrange;
     background-color: $colorWhite;
+    color: $colorOrange;
   }
+.button1:hover {
+    background-color: $colorOrange;
+    color: $colorWhite;
+    box-shadow: inset 0 0 0 3px $colorWhite;
+}
+
 .button2 {
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
   background-color: $colorOrange;
+  color: $colorWhite;
 }
+.button2:hover {
+  background: $colorWhite;
+  color:$colorOrange;
+  box-shadow: inset 0 0 0 3px $colorOrange;
+}
+
 .btn {
   width: 44px;
   height: 44px;
@@ -34,12 +48,18 @@
 //	}
 //}
 
-.arrow-down{
+.arrow-hero{
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
   background-color: $colorWhite;
 }
+.arrow-down {
+  width: 20px;
+  height: 40px;
+  background-color: $colorWhite;
+}
+
 // boton go
 // // .Go {
 // //   width: 25px;
@@ -64,16 +84,11 @@
 //   color: $colorWhite;
 //   @include Button-alt;
 // }
-.arrow-up 3
-3{
+.arrow-up {
   width: 45px;
   height: 45px;
   background-color: $colorWhite;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-left: 20px;
 }
-// .ico-arrow {
-//   width: 20.6px;
-//   height: 24px;
-//   object-fit: contain;
-//   background-color: $colorOrange;
-// }

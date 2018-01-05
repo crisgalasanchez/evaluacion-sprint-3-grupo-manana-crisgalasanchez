@@ -1,3 +1,42 @@
-.hero {
-
+body{
+ box-sizing: border-box;
+ margin:0;
+ padding: 0;
 }
+.hero {
+	min-width: 290px;
+ 	height: auto;
+ 	margin: 0 15px;
+ 	padding-top:280px;
+
+		@media all and (min-width:768px) {
+		  min-width: 690px;
+			margin: 0 40px;
+		}
+
+		@media all and (min-width:1280px) {
+			min-width: 730px;
+			margin: 0 275px;
+		}
+}
+.looking {
+  //width: 320px;
+  height: 376px;
+  background-color: $colorWhite;
+}
+.reasons {
+// width: 320px;
+  //height: 624px;
+  background-color: #eff9ff;
+  height: 100vh;
+}
+.explain-reasons{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 1fr ;
+
+		@media all and (min-width:600px) {
+			grid-template-columns: 1fr 1fr 1fr;
+		  grid-template-rows: 1fr;
+		}
+	}

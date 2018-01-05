@@ -1,11 +1,16 @@
- footer {
-  width: 320px;
-  height: 128px;
+footer {
+  //width: 320px;
+  //height: 128px;
   background-color: $colorDarkBlue;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer-text {
   width: 77px;
   height: 30px;
+  margin-left: 104px;
   color: $colorWhite;
   @include Footer---mobile;
 }
@@ -18,4 +23,7 @@
 
 .footer-text2-icon {
   color: $colorOrange;
+}
+.arrow-footer{
+  margin-top: -20px;
 }

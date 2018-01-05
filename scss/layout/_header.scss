@@ -1,9 +1,7 @@
 //menu
 .branch {
-	width: 320px;
+	//width: 320px;
 	height: 568px;
-	//background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), $colorBlack);
-	//background-blend-mode: multiply;
 	flex:1;
 	background-image: url(../images/cover.jpg);
 	height: 100vh;
@@ -97,7 +95,7 @@ header {
 	display: block;
 	color: $colorDarkGrey;
 	text-decoration: none;
-	transition: background ease 0.9s, color ease 0.3s;
+	transition: background ease 1s, color ease 0.3s;
 	&:hover {
 		color: $colorDarkGrey;
 		//background: rgba(mix($colorBlackAlt, $colorDarkBlue), 0.5);
