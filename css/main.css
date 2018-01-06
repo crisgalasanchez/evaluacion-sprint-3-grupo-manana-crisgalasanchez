@@ -153,6 +153,36 @@ footer {
   margin-top: -20px;
 }
 
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  min-width: 290px;
+  height: auto;
+  margin: 0 15px;
+  padding-top: 280px;
+}
+
+.looking {
+  background-color: #ffffff;
+  padding: 30px 30px;
+}
+
+.reasons {
+  background-color: #eff9ff;
+  padding: 30px 30px;
+}
+
+.explain-reasons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .button1 {
   width: 76px;
   height: 45px;
@@ -175,6 +205,7 @@ footer {
   border-radius: 22.5px;
   background-color: #f26002;
   color: #ffffff;
+  margin: 30px 0;
 }
 
 .button2:hover {
@@ -184,10 +215,28 @@ footer {
   box-shadow: inset 0 0 0 3px #f26002;
 }
 
+.pre-button2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .btn {
   width: 44px;
   height: 44px;
   background-color: #0271bc;
+}
+
+.pre-arrow-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .arrow-hero {
@@ -195,12 +244,14 @@ footer {
   height: 45px;
   border-radius: 22.5px;
   background-color: #ffffff;
+  text-align: center;
 }
 
 .arrow-down {
   width: 20px;
-  height: 40px;
+  height: 45px;
   background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .arrow-up {
@@ -213,38 +264,7 @@ footer {
   margin-left: 20px;
 }
 
-body {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.hero {
-  min-width: 290px;
-  height: auto;
-  margin: 0 15px;
-  padding-top: 280px;
-}
-
-.looking {
-  height: 376px;
-  background-color: #ffffff;
-}
-
-.reasons {
-  background-color: #eff9ff;
-  height: 100vh;
-}
-
-.explain-reasons {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
 .title {
-  width: 290px;
   height: 110px;
   color: #ffffff;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
@@ -256,7 +276,6 @@ body {
 }
 
 .text-hero {
-  width: 290px;
   height: 21px;
   color: #ffffff;
   font-family: Roboto;
@@ -265,28 +284,29 @@ body {
 }
 
 h4 {
-  width: 90px;
-  height: 30px;
   color: #8ccbea;
   font-family: Roboto;
   font-size: 14px;
   line-height: 2.14;
-  text-align: left;
 }
 
 h2 {
-  width: 290px;
-  height: 60px;
   color: #000000;
   font-family: RobotoSlab;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
+}
+
+.title-looking {
+  text-align: left;
+}
+
+.title-reason {
   text-align: center;
 }
 
 .text-looking {
-  width: 290px;
   height: 120px;
   color: #4a4a4a;
   font-family: Roboto;
@@ -296,7 +316,6 @@ h2 {
 }
 
 .pretitle {
-  width: 184px;
   height: 30px;
   color: #000000;
   font-family: RobotoSlab;
@@ -307,8 +326,6 @@ h2 {
 }
 
 .text-reasons {
-  width: 180px;
-  height: 63px;
   color: #000000;
   font-family: Roboto;
   font-size: 18px;
@@ -320,6 +337,7 @@ h2 {
   .explain-reasons {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    grid-gap: 30px;
   }
 }
 

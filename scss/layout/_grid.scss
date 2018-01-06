@@ -1,0 +1,40 @@
+body{
+ box-sizing: border-box;
+ margin:0;
+ padding: 0;
+}
+.hero {
+	min-width: 290px;
+ 	height: auto;
+ 	margin: 0 15px;
+ 	padding-top:280px;
+
+		@media all and (min-width:768px) {
+		  min-width: 690px;
+			margin: 0 40px;
+		}
+
+		@media all and (min-width:1280px) {
+			min-width: 730px;
+			margin: 0 275px;
+		}
+}
+.looking {
+  background-color: $colorWhite;
+	padding: 30px 30px;
+}
+.reasons {
+  background-color: #eff9ff;
+	padding: 30px 30px;
+}
+.explain-reasons{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 1fr ;
+
+	@media all and (min-width:600px) {
+		grid-template-columns: 1fr 1fr 1fr;
+	  grid-template-rows: 1fr;
+		grid-gap: 30px;
+	}
+}

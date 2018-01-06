@@ -61,15 +61,6 @@
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
-  text-align: left;
-}
-
-@mixin Section-title---mobile {
-  font-family: RobotoSlab;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.25;
-  text-align: center;
 }
 
 @mixin Hero-summary---tablet {
@@ -140,7 +131,7 @@
   font-family: Roboto;
   font-size: 14px;
   line-height: 2.14;
-  text-align: left;
+
 }
 
 @mixin Footer---mobile {

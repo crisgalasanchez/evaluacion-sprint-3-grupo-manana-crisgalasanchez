@@ -19,20 +19,3 @@ var arribaButton = document.getElementById('arriba');
 arribaButton.onclick = function(){
     window.scrollTo(0,0);
 }
-//AJAX
-// {
-//   "reasons": [
-//       {
-//         "title": "Maximus orci proin.",
-//         "description": "Mollis tristique e iaculis natoque ut natoque rhoncus."
-//       },
-//       {
-//         "title": "Elit elit in.",
-//         "description": "Ultricies posuere imperdiet proin donec. Laoreet ultrices amet."
-//       },
-//       {
-//         "title": "Lacus tincidunt ipsum.",
-//         "description": "Mattis diam i mauris et ante vel id."
-//       }
-//   ]
-// }
