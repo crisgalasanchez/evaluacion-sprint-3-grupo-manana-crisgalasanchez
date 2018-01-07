@@ -46,7 +46,7 @@ h4 {
 .title-reason{
   @include Section-title;
   text-align: center;
-  
+
     @media all and (min-width:768px) {
        @include Section-title-tablet;
     }
@@ -67,5 +67,8 @@ h4 {
 
     @media all and (min-width:768px) {
      @include Section-reason-tablet;
-  }
+    }
+    @media all and (min-width:1067px) {
+      padding: 30px;
+}
 }

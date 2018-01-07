@@ -379,7 +379,7 @@ h4 {
     font-family: Roboto;
     font-size: 20px;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -387,6 +387,18 @@ h4 {
   .title {
     font-size: 100px;
     line-height: 1.32;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .looking {
+    padding: 30px 20%;
+  }
+}
+
+@media all and (min-width: 1067px) {
+  .text-reasons {
+    padding: 30px;
   }
 }
 

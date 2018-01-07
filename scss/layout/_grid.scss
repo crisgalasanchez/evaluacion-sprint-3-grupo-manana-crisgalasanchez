@@ -24,6 +24,9 @@ body{
 .looking {
   background-color: $colorWhite;
 	padding: 30px 30px;
+    @media all and (min-width:1000px) {
+    padding: 30px 20%;
+  }
 }
 .reasons {
   background-color: $colorExtraLigthBlue;
