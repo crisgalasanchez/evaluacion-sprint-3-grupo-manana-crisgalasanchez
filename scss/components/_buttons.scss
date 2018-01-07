@@ -1,6 +1,6 @@
 .button1 {
     width: 76px;
-    height: 45px;
+    height: $standarSize;
     border-radius: 22.5px;
     border: solid 2px $colorOrange;
     background-color: $colorWhite;
@@ -11,10 +11,9 @@
     color: $colorWhite;
     box-shadow: inset 0 0 0 3px $colorWhite;
 }
-
 .button2 {
   width: 184px;
-  height: 45px;
+  height: $standarSize;
   border-radius: 22.5px;
   background-color: $colorOrange;
   color: $colorWhite;
@@ -30,9 +29,9 @@
   justify-content: center;
 }
 .btn {
-  width: 44px;
-  height: 44px;
-  background-color: #0271bc;
+  width: $standarSize;
+  height: $standarSize;
+  background-color: $colorBlue;
 }
 // .menu-trigger {
 // 	line-height: $heightHeader;
@@ -51,54 +50,24 @@
 // 		background: $colorMenuBTNHover;
 //	}
 //}
-.pre-arrow-hero{
+.pre-arrow{
   display: flex;
   justify-content: center;
 }
 
-.arrow-hero{
-  width: 45px;
-  height: 45px;
+.arrow{
+  width: $standarSize;
+  height: $standarSize;
   border-radius: 22.5px;
   background-color: $colorWhite;
   text-align: center;
 }
-.arrow-down {
+.arrow-image {
   width: 20px;
-  height: 45px;
+  height: $standarSize;
   background-color: $colorWhite;
   border-radius: 10px;
 }
-
-// boton go
-// // .Go {
-// //   width: 25px;
-// //   height: 45px;
-// //   color: $colorOrange;
-// //   @include Button-alt;
-// // }
-// // .Rectangle {
-// //   width: 320px;
-// //   height: 376px;
-// //   background-color: $colorWhite;
-// // }
-// boton reason
-// .Rectangle-2 {
-//   width: 320px;
-//   height: 624px;
-//   background-color: #eff9ff;
-// }
-// .Go {
-//   width: 133px;
-//   height: 45px;
-//   color: $colorWhite;
-//   @include Button-alt;
-// }
-.arrow-up {
-  width: 45px;
-  height: 45px;
-  background-color: $colorWhite;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
-  margin-left: 20px;
+.arrow-footer{
+  margin-top: -20px;
 }

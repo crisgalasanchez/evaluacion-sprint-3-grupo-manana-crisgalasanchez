@@ -1,6 +1,4 @@
 footer {
-  //width: 320px;
-  //height: 128px;
   background-color: $colorDarkBlue;
   position: relative;
   display: flex;
@@ -12,18 +10,15 @@ footer {
   height: 30px;
   margin-left: 104px;
   color: $colorWhite;
-  @include Footer---mobile;
+  @include Footer;
 }
 .footer-text2 {
   width: 290px;
   height: 30px;
   color: $colorWhite;
-  @include Footer---mobile;
+  @include Footer;
 }
 
 .footer-text2-icon {
   color: $colorOrange;
-}
-.arrow-footer{
-  margin-top: -20px;
 }

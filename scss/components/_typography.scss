@@ -2,14 +2,29 @@
   height: 110px;
   color: $colorWhite;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  @include Common-title;
   @include Hero-title---mobile;
+
+    @media all and (min-width:768px) {
+      @include Hero-title---tablet;
+    }
+
+    @media all and (min-width:900px) {
+      @include Hero-title---desktop;
+    }
 }
 .text-hero{
-
   height: 21px;
+  font-size: $textSizeMobile;
   color: $colorWhite;
-  @include Hero-summary---mobile;
+  @include Common-text;
+    @media all and (min-width:768px) {
+      font-size: $textSizeTablet;
+    }
+    @media all and (min-width:1280px) {
+  }
 }
+
 h4 {
   color: $colorLightBlue;
   @include Section-category;
