@@ -1,109 +1,88 @@
 /* Text styles */
-@mixin Common-title{
+@mixin Common-title {
   font-family: RobotoSlab;
   font-weight: bold;
   text-align: center;
 }
 
-@mixin Hero-title---desktop {
-  font-size: 100px;
-  line-height: 1.32;
+@mixin Common-text{
+  font-family: Roboto;
+  text-align: center;
 }
 
-@mixin Hero-title---tablet {
-  font-size: 80px;
-  line-height: 1.33;
-}
-
-@mixin Hero-title---mobile {
+@mixin Hero-title {
   font-size: 42px;
   line-height: 1.31;
 }
 
-@mixin Section-title---desktop-center {
-  font-family: RobotoSlab;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 1.41;
-  text-align: center;
+@mixin Hero-title-tablet {
+  font-size: 80px;
+  line-height: 1.33;
 }
 
-@mixin Section-title---desktop {
-  font-family: RobotoSlab;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 1.41;
-  text-align: left;
+@mixin Hero-title-desktop {
+  font-size: 100px;
+  line-height: 1.32;
 }
 
-@mixin Section-title---tablet {
-  font-family: RobotoSlab;
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 1.73;
-  text-align: left;
+@mixin Section-hero {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 2.14;
 }
 
-@mixin Section-title---tablet-center {
-  font-family: RobotoSlab;
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 1.73;
-  text-align: center;
-}
-
-@mixin Section-title---mobile {
+@mixin Section-title {
   font-family: RobotoSlab;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
 }
 
+@mixin Section-title-tablet {
+  font-size: 26px;
+  line-height: 1.73;
+}
+
+@mixin Section-title-desktop {
+  font-size: 32px;
+  line-height: 1.41;
+}
+
+@mixin Section-looking {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
 @mixin Button-alt {
   font-family: Roboto;
   font-size: 20px;
-  font-weight: 500;
-  line-height: 2.25;
-  text-align: center;
-}
-
-@mixin Reason-description---tablet {
-  font-family: Roboto;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-@mixin Section-description---tablet {
-  font-family: Roboto;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: left;
-}
-
-@mixin Reason-title---mobile {
-  font-family: RobotoSlab;
-  font-size: 18px;
+  padding: 0 0 45px 0;
   font-weight: bold;
-  line-height: 1.67;
   text-align: center;
 }
 
-@mixin Reason-description---mobile {
-  font-family: Roboto;
+@mixin Reason-title {
   font-size: 18px;
   line-height: 1.67;
-  text-align: center;
 }
 
-@mixin Section-description {
+@mixin Reason-title-tablet {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+@mixin Section-reason-tablet {
   font-family: Roboto;
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 20px;
+  line-height: 1.5;
   text-align: left;
 }
-@mixin Common-text{
+
+@mixin Section-reason {
   font-family: Roboto;
+  font-size: 18px;
+  line-height: 1.67;
   text-align: center;
 }
 
@@ -115,12 +94,6 @@
   text-align: left;
 }
 
-@mixin Section-category {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 2.14;
-}
-//si
 @mixin Footer {
   font-family: Roboto;
   font-size: 14px;

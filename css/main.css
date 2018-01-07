@@ -186,6 +186,11 @@ body {
   border: solid 2px #f26002;
   background-color: #ffffff;
   color: #f26002;
+  font-family: Roboto;
+  font-size: 20px;
+  padding: 0 0 45px 0;
+  font-weight: bold;
+  text-align: center;
 }
 
 .button1:hover {
@@ -195,22 +200,6 @@ body {
   box-shadow: inset 0 0 0 3px #ffffff;
 }
 
-.button2 {
-  width: 184px;
-  height: 45px;
-  border-radius: 22.5px;
-  background-color: #f26002;
-  color: #ffffff;
-  margin: 30px 0;
-}
-
-.button2:hover {
-  background: #ffffff;
-  color: #f26002;
-  -webkit-box-shadow: inset 0 0 0 3px #f26002;
-  box-shadow: inset 0 0 0 3px #f26002;
-}
-
 .pre-button2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,6 +207,28 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.button2 {
+  width: 184px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: #f26002;
+  color: #ffffff;
+  margin: 30px 0;
+  line-height: 2.25;
+  font-family: Roboto;
+  font-size: 20px;
+  padding: 0 0 45px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button2:hover {
+  background: #ffffff;
+  color: #f26002;
+  -webkit-box-shadow: inset 0 0 0 3px #f26002;
+  box-shadow: inset 0 0 0 3px #f26002;
 }
 
 .btn {
@@ -280,43 +291,37 @@ h4 {
   line-height: 2.14;
 }
 
-h2 {
-  color: #000000;
+.title-looking {
   font-family: RobotoSlab;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
 }
 
-.title-looking {
-  text-align: left;
-}
-
-.title-reason {
-  text-align: center;
-}
-
 .text-looking {
-  height: 120px;
   color: #4a4a4a;
   font-family: Roboto;
   font-size: 18px;
   line-height: 1.67;
-  text-align: left;
+}
+
+.title-reason {
+  font-family: RobotoSlab;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
 }
 
 .pretitle {
-  height: 30px;
-  color: #000000;
-  font-family: RobotoSlab;
   font-size: 18px;
-  font-weight: bold;
   line-height: 1.67;
+  font-family: RobotoSlab;
+  font-weight: bold;
   text-align: center;
 }
 
 .text-reasons {
-  color: #000000;
   font-family: Roboto;
   font-size: 18px;
   line-height: 1.67;
@@ -335,6 +340,15 @@ h2 {
   .hero {
     min-width: 690px;
     margin: 0 40px;
+    padding-top: 120px;
+  }
+
+  .button1 {
+    width: 91px;
+  }
+
+  .button2 {
+    width: 210px;
   }
 
   .title {
@@ -344,6 +358,28 @@ h2 {
 
   .text-hero {
     font-size: 24px;
+  }
+
+  .title-looking {
+    font-size: 26px;
+    line-height: 1.73;
+  }
+
+  .title-reason {
+    font-size: 26px;
+    line-height: 1.73;
+  }
+
+  .pretitle {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .text-reasons {
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
   }
 }
 
@@ -358,6 +394,25 @@ h2 {
   .hero {
     min-width: 730px;
     margin: 0 275px;
+    padding-top: 80px;
+  }
+
+  .button1 {
+    width: 160px;
+  }
+
+  .button2 {
+    width: 255px;
+  }
+
+  .title-looking {
+    font-size: 32px;
+    line-height: 1.41;
+  }
+
+  .title-reason {
+    font-size: 32px;
+    line-height: 1.41;
   }
 }
 

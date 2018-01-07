@@ -5,12 +5,27 @@
     border: solid 2px $colorOrange;
     background-color: $colorWhite;
     color: $colorOrange;
+    @include Button-alt;
+
+      @media all and (min-width:768px) {
+  		  width: 91px;
+  		}
+  		@media all and (min-width:1280px) {
+  			width: 160px;
+  		}
   }
+
 .button1:hover {
     background-color: $colorOrange;
     color: $colorWhite;
     box-shadow: inset 0 0 0 3px $colorWhite;
 }
+
+.pre-button2{
+  display: flex;
+  justify-content: center;
+}
+
 .button2 {
   width: 184px;
   height: $standarSize;
@@ -18,16 +33,23 @@
   background-color: $colorOrange;
   color: $colorWhite;
   margin: 30px 0;
+  line-height: 2.25;
+  @include Button-alt;
+
+    @media all and (min-width:768px) {
+      width: 210px;
+    }
+    @media all and (min-width:1280px) {
+      width: 255px;
+    }
 }
+
 .button2:hover {
   background: $colorWhite;
   color:$colorOrange;
   box-shadow: inset 0 0 0 3px $colorOrange;
 }
-.pre-button2{
-  display: flex;
-  justify-content: center;
-}
+
 .btn {
   width: $standarSize;
   height: $standarSize;
@@ -62,12 +84,14 @@
   background-color: $colorWhite;
   text-align: center;
 }
+
 .arrow-image {
   width: 20px;
   height: $standarSize;
   background-color: $colorWhite;
   border-radius: 10px;
 }
+
 .arrow-footer{
   margin-top: -20px;
 }

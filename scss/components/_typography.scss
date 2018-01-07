@@ -3,20 +3,21 @@
   color: $colorWhite;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   @include Common-title;
-  @include Hero-title---mobile;
+  @include Hero-title;
 
     @media all and (min-width:768px) {
-      @include Hero-title---tablet;
+      @include Hero-title-tablet;
     }
 
     @media all and (min-width:900px) {
-      @include Hero-title---desktop;
+      @include Hero-title-desktop;
     }
 }
 .text-hero{
   height: 21px;
   font-size: $textSizeMobile;
   color: $colorWhite;
+
   @include Common-text;
     @media all and (min-width:768px) {
       font-size: $textSizeTablet;
@@ -24,32 +25,47 @@
     @media all and (min-width:1280px) {
   }
 }
-
 h4 {
   color: $colorLightBlue;
-  @include Section-category;
-}
-h2 {
-  color: $colorBlack;
-  @include Section-title---mobile;
+  @include Section-hero;
 }
 .title-looking{
-  text-align: left;
-}
-.title-reason{
-  text-align: center;
+  @include Section-title;
+
+    @media all and (min-width:768px) {
+       @include Section-title-tablet;
+    }
+    @media all and (min-width:1280px) {
+      @include Section-title-desktop;
+    }
 }
 .text-looking {
-  height: 120px;
   color: $colorDarkGrey;
-  @include Section-description;
+  @include Section-looking;
+}
+.title-reason{
+  @include Section-title;
+  text-align: center;
+  
+    @media all and (min-width:768px) {
+       @include Section-title-tablet;
+    }
+    @media all and (min-width:1280px) {
+      @include Section-title-desktop;
+    }
 }
 .pretitle {
-  height: 30px;
-  color: $colorBlack;
-  @include Reason-title---mobile;
+  @include Reason-title;
+  @include Common-title;
+
+    @media all and (min-width:768px) {
+     @include Reason-title-tablet;
+  }
 }
 .text-reasons {
-  color: $colorBlack;
-  @include Reason-description---mobile;
+  @include Section-reason;
+
+    @media all and (min-width:768px) {
+     @include Section-reason-tablet;
+  }
 }
