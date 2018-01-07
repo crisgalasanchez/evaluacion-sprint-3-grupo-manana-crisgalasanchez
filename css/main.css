@@ -58,7 +58,8 @@ header {
 .navigation {
   position: absolute;
   height: 100%;
-  width: 189px;
+  width: 60%;
+  max-width: 344px;
   background: rgba(226, 241, 249, 0.95);
   left: -400px;
   top: 0;
@@ -77,6 +78,7 @@ header {
   border: 0;
   border-radius: 0;
   width: 42px;
+  height: 42px;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
@@ -94,6 +96,15 @@ header {
   margin: 0;
   padding: 50px 0 0;
   list-style: none;
+}
+
+.menu li {
+  padding: 10px 0;
+  border-top: 1px solid rgba(163, 221, 255, 0.8);
+}
+
+.menu:last-child {
+  border-bottom: 1px solid rgba(163, 221, 255, 0.8);
 }
 
 .menu-link {
@@ -234,6 +245,7 @@ body {
 .btn {
   width: 45px;
   height: 45px;
+  border: none;
   background-color: #0271bc;
 }
 
@@ -266,7 +278,6 @@ body {
 }
 
 .title {
-  height: 110px;
   color: #ffffff;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   font-family: RobotoSlab;
@@ -277,7 +288,6 @@ body {
 }
 
 .text-hero {
-  height: 21px;
   font-size: 16px;
   color: #ffffff;
   font-family: Roboto;
@@ -340,7 +350,7 @@ h4 {
   .hero {
     min-width: 690px;
     margin: 0 40px;
-    padding-top: 120px;
+    padding-top: 60px;
   }
 
   .button1 {
@@ -406,7 +416,7 @@ h4 {
   .hero {
     min-width: 730px;
     margin: 0 275px;
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   .button1 {

@@ -45,7 +45,8 @@ header {
 .navigation {
 	position: absolute;
 	height: 100%;
-	width: 245 - 56px;
+	width: 60%;
+	max-width:344px;
 	background: rgba($colorExtraLigthBlue, 0.95);
 	//box-shadow: 0 0 15px rgba($colorBlack, 0.4);
 	left: -400px;
@@ -62,6 +63,7 @@ header {
 	border: 0;
 	border-radius: 0;
 	width: 35px * 1.2;
+	height: 35px * 1.2;
 	outline: none;
 	cursor: pointer;
 	//font-weight: $fontLight;
@@ -83,6 +85,14 @@ header {
 	margin: 0;
 	padding: 50px 0 0;
 	list-style: none;
+}
+
+.menu li{
+	padding: 10px 0;
+	border-top: 1px solid rgba(163, 221, 255, 0.8);
+}
+.menu:last-child{
+	border-bottom: 1px solid rgba(163, 221, 255, 0.8);
 }
 .menu-option{
 	//border-bottom: 1px solid ,grey 0.25);
