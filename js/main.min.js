@@ -48,9 +48,6 @@ function requestReasons() {
 	  var response = request.responseText;
 		var responseJSON = JSON.parse(response);
 
-		//TODO cargar los datos de la respuesta en el html ... a las propiedades de responseJSON se accede como todos los objetos.
-		//Ejemplo: JSONresponse.reasons
-
 		var reasons = responseJSON.reasons;
 		for(var i=0; i < reasons.length; i++){
 			var reasonItem = reasons[i];
