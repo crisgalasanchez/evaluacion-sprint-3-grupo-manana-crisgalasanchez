@@ -1,18 +1,27 @@
-// Vmenu sale del lateral
+// menu sale del lateral
 var branch = document.querySelector('.branch');
 var menuButton = branch.querySelector('.btn');
 var menuClose = branch.querySelector('.close');
+var mask = document.querySelector('.mask')
 
 function openNavMenu() {
 	branch.classList.add('branch--menu-visible');
+	mask.style.opacity = 0.75;
+	mask.style.zIndex = 1;
 };
 
 function closeNavMenu() {
 	branch.classList.remove('branch--menu-visible');
+	mask.style.opacity = 0;
+	mask.style.zIndex = 0;
 };
 
 menuButton.addEventListener('click', openNavMenu);
 menuClose.addEventListener('click', closeNavMenu);
+
+//Desaparecer el menu al seleccionar elemento
+var elementLi = document.querySelector('.menu');
+elementLi.addEventListener('click', closeNavMenu);
 
 //subir al principio de la página cuando se hace click en la flecha arriba
 var arribaButton = document.getElementById('arriba');

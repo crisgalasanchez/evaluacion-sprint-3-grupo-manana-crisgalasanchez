@@ -1,3 +1,4 @@
+
 .title {
   color: $colorWhite;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
@@ -12,6 +13,7 @@
       @include Hero-title-desktop;
     }
 }
+
 .text-hero{
   font-size: $textSizeMobile;
   color: $colorWhite;
@@ -23,10 +25,12 @@
     @media all and (min-width:1280px) {
   }
 }
+
 h4 {
   color: $colorLightBlue;
   @include Section-hero;
 }
+
 .title-looking{
   @include Section-title;
 
@@ -43,7 +47,7 @@ h4 {
 }
 .title-reason{
   @include Section-title;
-  text-align: center;
+    text-align: center;
 
     @media all and (min-width:768px) {
        @include Section-title-tablet;
@@ -68,5 +72,5 @@ h4 {
     }
     @media all and (min-width:1067px) {
       padding: 30px;
-}
+    }
 }

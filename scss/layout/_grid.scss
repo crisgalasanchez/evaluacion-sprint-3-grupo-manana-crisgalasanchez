@@ -1,8 +1,9 @@
 body{
  box-sizing: border-box;
- margin:0;
- padding: 0;
+ margin:$positionStart;
+ padding: $positionStart;
 }
+
 .hero {
 	min-width: 290px;
  	height: auto;
@@ -21,25 +22,28 @@ body{
       padding-top:70px;
 		}
 }
+
 .looking {
   background-color: $colorWhite;
 	padding: 30px 30px;
+
     @media all and (min-width:1000px) {
-    padding: 30px 20%;
+      padding: 30px 20%;
   }
 }
 .reasons {
   background-color: $colorExtraLigthBlue;
 	padding: 30px 30px;
 }
+
 .explain-reasons{
   display: grid;
   grid-template-columns: 1fr ;
   grid-template-rows: 1fr 1fr 1fr ;
 
-	@media all and (min-width:600px) {
-		grid-template-columns: 1fr 1fr 1fr;
-	  grid-template-rows: 1fr;
-		grid-gap: 30px;
-	}
+	  @media all and (min-width:600px) {
+		  grid-template-columns: 1fr 1fr 1fr;
+	    grid-template-rows: 1fr;
+		  grid-gap: 30px;
+	  }
 }

@@ -1,45 +1,51 @@
 //menu
+.mask{
+	position: absolute;
+	top: $positionStart;
+	left: $positionStart;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(84, 84, 84);
+	opacity: $positionStart;
+}
+
 .branch {
-	//width: 320px;
-	height: 568px;
-	flex:1;
-	background-image: url(../images/cover.jpg);
 	height: 100vh;
+	background-image: url(../images/cover.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 30%;
 	background-size: cover;
 	overflow: hidden;
 	display: flex;
+	flex:1;
 	flex-direction: column;
-	//min-height: 100vh;
 	position: relative;
-
 	&::after {
 		content: '';
 		position: absolute;
-		left: 0;
-		top: 0;
-		height: 0;
-		width: 0;
-		//background: rgba($colorWhite, 0);
+		left: $positionStart;
+		top: $positionStart;
+		height: $positionStart;
+		width: $positionStart;
 		transition: background ease 1s .3s;
 	}
 }
 
 header {
 	position: relative;
+	z-index: 1;
 }
 
 .branch--menu-visible {
 	&::after {
 		content: '';
 		position: absolute;
-		left: 0;
-		top: 0;
+		left: $positionStart;
+		top: $positionStart;
 		height: 100%;
 		width: 100%;
-		//background: rgba($colorWhite, .7);
-		z-index: 1;
+		z-index: 3;
 	}
 }
 .navigation {
@@ -48,26 +54,24 @@ header {
 	width: 60%;
 	max-width:344px;
 	background: rgba($colorExtraLigthBlue, 0.95);
-	//box-shadow: 0 0 15px rgba($colorBlack, 0.4);
 	left: -400px;
-	top: 0;
+	top: $positionStart;
 	transition: left ease 0.8s;
 	.branch--menu-visible & {
-		left: 0;
-		z-index: 2;
+		left: $positionStart;
+		z-index: 4;
 	}
 }
+
 .close {
 	line-height:30px;
-	padding: 0;
-	border: 0;
-	border-radius: 0;
-	width: 35px * 1.2;
-	height: 35px * 1.2;
+	padding: $positionStart;
+	border: $positionStart;
+	border-radius: $positionStart;
+	width: $standarSize;
+	height: $standarSize;
 	outline: none;
 	cursor: pointer;
-	//font-weight: $fontLight;
-	text-transform: uppercase;
 	color: $colorWhite;
 	background: $colorOrange;
 	transition: background ease 0.3s;
@@ -75,14 +79,10 @@ header {
 	font-size: 1.3em;
 	left: 100%;
 	z-index: 2;
-	&:hover {
-		//background: $colorMenuBTNHoverAlt;
-		//background: $colorMenuBTN;
-	}
 }
+
 .menu {
-	//color: $colorLightGrey;
-	margin: 0;
+	margin: $positionStart;
 	padding: 50px 0 0;
 	list-style: none;
 }
@@ -90,24 +90,15 @@ header {
 .menu li{
 	padding: 10px 0;
 	border-top: 1px solid rgba(163, 221, 255, 0.8);
-}
-.menu:last-child{
-	border-bottom: 1px solid rgba(163, 221, 255, 0.8);
-}
-.menu-option{
-	//border-bottom: 1px solid ,grey 0.25);
-	&:first-child {
-		//border-top: 1px solid,grey 0.25);
+	&:last-child{
+		border-bottom: 1px solid rgba(163, 221, 255, 0.8);
 	}
 }
+
 .menu-link {
 	padding: 0 30px;
 	display: block;
 	color: $colorDarkGrey;
 	text-decoration: none;
 	transition: background ease 1s, color ease 0.3s;
-	&:hover {
-		color: $colorDarkGrey;
-		//background: rgba(mix($colorBlackAlt, $colorDarkBlue), 0.5);
-	}
 }
