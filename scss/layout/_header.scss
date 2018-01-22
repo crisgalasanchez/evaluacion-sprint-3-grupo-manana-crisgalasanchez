@@ -8,6 +8,12 @@
 	height: 100%;
 	background-color: rgb(84, 84, 84);
 	opacity: $positionStart;
+	background: red;
+	transform: translateX(-100%);
+	.branch--menu-visible & {
+		transform:translateX(0);
+
+	}
 }
 
 .branch {
@@ -57,10 +63,7 @@ header {
 	left: -400px;
 	top: $positionStart;
 	transition: left ease 0.8s;
-	.branch--menu-visible & {
-		left: $positionStart;
-		z-index: 4;
-	}
+
 }
 
 .close {

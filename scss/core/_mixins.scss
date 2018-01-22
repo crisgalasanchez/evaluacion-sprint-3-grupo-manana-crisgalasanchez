@@ -1,12 +1,12 @@
 /* Text styles */
 @mixin Common-title {
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-weight: bold;
   text-align: center;
 }
 
 @mixin Common-text{
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
